@@ -213,6 +213,7 @@
 .testimonial h2 {
   text-align: center;
   padding-top: 200px;
+  font-family: fraunces;
 }
 
 .testimonial div {
@@ -244,11 +245,6 @@ footer {
   color: #0a5252;
 }
 
-.logofooter{
-  opacity: 0.5;
- 
-}
-
 footer div {
   margin: 40px;
 }
@@ -259,6 +255,7 @@ footer div a {
   font-weight: bold;
   font-size: 1.3em;
   color: #0a5252;
+  opacity: 0.7;
 }
 
 .footcontainer {
@@ -269,4 +266,9 @@ footer div a {
 
 .socialmedia img{
   margin: 8px;
+}
+
+.socialmedia {
+  margin-top: 20px;
+  padding: 30px;
 }
