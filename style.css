@@ -9,8 +9,12 @@
     background-image: url("./images/images/desktop/image-header.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 500px;
+    width: auto;
+    height: 100vh;
+}
+
+.logo-small {
+  visibility: hidden;
 }
 
 .menu-left {
@@ -20,7 +24,7 @@
 .logo {
     margin-top: 50px;
     margin-left: 50px;
-    width: 100px;
+    width: 160px;
 }
 
 .menu-right {
@@ -35,6 +39,10 @@
     text-decoration: none;
     display: inline-block;
     margin-top: 50px;
+}
+
+.menu-right-mobile {
+  visibility: hidden;
 }
 
 .menu-list li a{
@@ -60,38 +68,36 @@
 }
 
 .bigh1 {
-  font-family: "FreeSerif";
+  font-family: "fraunces";
+  letter-spacing: 8px;
   color: white;
   text-align: center;
-  font-weight: bold;
+  margin: 0 auto;
   font-size: 3em;
-  padding-bottom: 20px;
-  white-space: nowrap;
+  padding-bottom: 50px;
 }
 
 .fleche {
   display: block;
-/*   margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px; */
   width: 50%;
   margin: auto;
-  margin-top: 50px;
-/*   text-align: center; */
+  margin-top: 120px;
 }
 
 .arrow-down {
   display: block;
   margin: auto;
+/*   margin-top: 30px; */
 }
 
 .section1, .section2, .section3 {
   display: flex;
+  flex-direction: row;
 }
 
 .edge1 {
   width: 50%;
-  height: 600px;
+  height: 100vh;
   display: inline-block;
 }
 
@@ -128,13 +134,14 @@
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 600px;
+  height: 100vh;
   display: inline-block;
 }
 
+
 .edge2 {
   width: 50%;
-  height: 600px;
+  height: 100vh;
   display: inline-block;
 }
 
@@ -144,7 +151,7 @@
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 600px;
+  height: 100vh;
   display: inline-block;
 }
 
@@ -154,7 +161,7 @@
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 600px;
+  height: 100vh;
   display: inline-block;
 }
 
@@ -164,7 +171,7 @@
   background-position: center;
   background-size: cover;
   width: 50%;
-  height: 600px;
+  height: 100vh;
   display: inline-block;
 }
 
@@ -271,4 +278,166 @@ footer div a {
 .socialmedia {
   margin-top: 20px;
   padding: 30px;
+}
+
+
+@media screen and (max-width: 900px) {
+ 
+.header-container {
+    background-image: url("./images/images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100vh;
+}
+
+.menu-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+  
+.bigh1 {
+  font-size: 1.8em;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 160px;
+  }
+  .menu-list {
+     display: none; 
+}
+
+  
+.section1, .section3 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section3 {
+  height: 1000px;
+}
+
+.logo-small {
+  margin-top: 25px;
+  margin-right: 25px;
+  visibility: visible;
+}
+
+  .edge, .edge1 , .edge2 , .edge22, .edge33 , .edge3 {
+    width: 100%;
+  }
+
+.edge33-content, .edge3-content {
+  width: 100%;
+  margin: auto;
+  margin-top: 60%;
+}
+
+.flextestimonial {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.testimonial h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: fraunces;
+}
+  
+.pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.pics img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.menu-right-mobile {
+  visibility: visible;
+  width: 75%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  top: 150px;
+  left: 22%;
+}
+
+.menu-list-mobile {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  tex-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  
+.menu-list-mobile li{
+  width: auto;
+  padding: 27px;
+  text-decoration: none;
+  list-style: none;
+/*   background: yellow; */
+}
+
+  
+
+.menu-list-mobile li a {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+.logo-small:hover {
+  
+}  
+
+
+
+.menu-list-mobile li a:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 213, 0);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+  .btn2 {
+    background: rgb(255, 213, 0);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+  }
+
+.triangle{
+  display: flex;
+  justify-content: right;
+  width: 75%;
+  margin: auto;
+  margin-top: -250px;
+  background: blue;
+}
+
+  
+.triangle .triangle-top{
+  border-bottom: 100px solid white;
+  border-left: 50px solid transparent;
+  padding-top: 0px; 
+}
 }
